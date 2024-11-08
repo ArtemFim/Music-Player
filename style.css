@@ -121,6 +121,10 @@ body {
   color: #fff;
   margin: 44px 0;
 }
+.music__btn--black:hover {
+  background: #000;
+  cursor: pointer;
+}
 .about {
   /* min-height: 1204px; */
   background: linear-gradient(180deg, rgb(213, 48, 5), rgb(0, 0, 0) 6.037%);
@@ -245,6 +249,9 @@ body {
   font-weight: 400;
   line-height: 1px;
 }
+.info__link--underline:hover {
+  text-decoration: underline;
+}
 .copyright {
   margin-top: 76px;
   display: flex;
@@ -279,4 +286,7 @@ body {
   font-size: 15px;
   font-weight: 500;
   line-height: 18px;
+}
+.copyright__link--underline:hover {
+  text-decoration: underline;
 }
