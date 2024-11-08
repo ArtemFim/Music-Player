@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1243px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  color: #fff;
+}
+.header {
+  background-color: #000;
+  background-image: url(/images/background-header.jpeg);
+}
+.header__nav {
+  padding-top: 47px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  animation: scales 1s ease infinite;
+}
+@keyframes scales {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.nav__list {
+  display: flex;
+  width: 529px;
+  justify-content: space-between;
+  margin-left: 213px;
+}
+.nav__link {
+  text-transform: uppercase;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+}
+.nav__link--bold:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.header__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__title {
+  font-family: "Kenia", sans-serif;
+  font-weight: 400;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 150px;
+  padding-bottom: 111px;
+}
+
+.hero__img {
+  max-height: 892px;
+  overflow: hidden;
+}
+.hero__text {
+  font-family: "Istok Web", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  padding-bottom: 57px;
+}
+.music {
+  background-color: #d53005;
+  min-height: 1024px;
+  background-image: url(./images/Hand.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.music__title {
+  padding-top: 83px;
+  font-family: Karla, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.muscic__btns {
+  display: flex;
+  flex-direction: column;
+  margin: 213px 0;
+}
+.music__btn {
+  width: 382px;
+  height: 83px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: -4px -4px 30px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(
+    2087.07% 134.42% at 2% 8%,
+    rgb(177, 62, 24),
+    rgb(243, 80, 26) 100%
+  );
+  font-family: Karla;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47px;
+  text-align: center;
+  color: #fff;
+  margin: 44px 0;
+}
+.about {
+  /* min-height: 1204px; */
+  background: linear-gradient(180deg, rgb(213, 48, 5), rgb(0, 0, 0) 6.037%);
+}
+.about__title {
+  padding-top: 83px;
+  font-family: "Karla", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.about__box {
+  min-height: 834px;
+  display: grid;
+}
+.about__text {
+  font-family: "Karla", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: auto;
+}
+.store {
+  background-color: #d53005;
+  min-height: 1024px;
+  background-image: url(./images/laptop.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.store__title {
+  padding-top: 83px;
+  font-family: Karla, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.store__btns {
+  display: flex;
+  flex-direction: column;
+  margin: 96px 0;
+}
+.store__btn {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 240px;
+  height: 60px;
+  border-radius: 30px;
+  box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(2, 2, 2, 0.9);
+  border: rgba(2, 2, 2, 0.9);
+  margin: 24px 0;
+  transition: 0.5s ease;
+}
+
+.store__btn--active:hover {
+  color: #000;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  box-shadow: -4px -4px 4px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(227, 227, 227);
+}
+.text {
+  width: 431px;
+  margin-left: 232px;
+}
+.text__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.text__description {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 17px;
+}
+.text__link {
+  display: block;
+  color: rgba(4, 4, 4, 0.8);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.footer {
+  background: linear-gradient(180deg, rgb(213, 48, 5), rgb(0, 0, 0) 4.015%);
+}
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 120px;
+}
+.info {
+  margin: 0 74px;
+}
+.info__title {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+}
+.info__list {
+  padding-top: 30px;
+}
+.info__link {
+  color: inherit;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1px;
+}
+.copyright {
+  margin-top: 76px;
+  display: flex;
+  padding-bottom: 74px;
+}
+.copyright__logo {
+  color: rgb(255, 255, 255);
+  font-family: Kenia;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+.copyright__info {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.copyright__lists {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 49px;
+}
+.copyright__list {
+  padding: 0 47px;
+}
+.copyright__link {
+  color: inherit;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
